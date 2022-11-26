@@ -25,7 +25,9 @@ const MyApp: React.FunctionComponent<MyAppProps> = (props) => {
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <Header />
+        <>
         <Component {...pageProps} />
+        </>
         <Footer />
       </ThemeProvider>
     </CacheProvider>

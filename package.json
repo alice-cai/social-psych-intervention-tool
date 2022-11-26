@@ -4,6 +4,7 @@
   "homepage": "https://alice-cai.github.io/social-psych-intervention-tool",
   "private": true,
   "scripts": {
+    "preinstall": "npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -19,12 +20,16 @@
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.0.0-rc.1",
     "@mui/material": "^5.10.11",
+    "array-union": "^1.0.2",
+    "array-uniq": "^1.0.3",
+    "color-name": "^1.1.4",
     "gh-pages": "^4.0.0",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-code-input": "^3.10.1",
     "react-dom": "18.0.0",
-    "sharp": "^0.31.2"
+    "sharp": "^0.31.2",
+    "string_decoder": "^1.1.1"
   },
   "devDependencies": {
     "@types/node": "17.0.23",
@@ -33,5 +38,9 @@
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.4",
     "typescript": "4.6.3"
+  },
+  "resolutions": {
+    "@types/react": "17.0.43",
+    "@types/react-dom": "17.0.14"
   }
 }
